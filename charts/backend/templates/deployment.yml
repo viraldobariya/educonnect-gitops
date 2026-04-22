@@ -16,10 +16,10 @@ spec:
         app: backend
     spec:
       containers:
-        # - image: {{ .Values.backend.image}}
-        - image: "viraldobariya33/edu-backend:1.2.0"
+        - image: "  {{ .Values.backend.repository}}:{{ .Values.backend.tag}}"
+        # - image: "viraldobariya33/edu-backend:1.2.0"
           name: "backend-container"
-          ports:
+          ports:S
             - containerPort: 8080
           envFrom:
             - secretRef:
