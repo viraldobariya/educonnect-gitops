@@ -16,7 +16,7 @@ spec:
         app: backend
     spec:
       containers:
-        - image: "  {{ .Values.backend.repository}}:{{ .Values.backend.tag}}"
+        - image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
         # - image: "viraldobariya33/edu-backend:1.2.0"
           name: "backend-container"
           ports:S
