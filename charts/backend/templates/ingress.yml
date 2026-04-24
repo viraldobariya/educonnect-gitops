@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: educonnect.viraldobariya.me
+    - host: d29kxofw34aybe.cloudfront.net
       http:
         paths:
           - path: /
