@@ -15,6 +15,7 @@ spec:
       labels:
         app: backend
     spec:
+      serviceAccountName: backend-sa
       containers:
         - image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
         # - image: "viraldobariya33/edu-backend:1.2.0"
