@@ -23,6 +23,7 @@ spec:
         vpcId: vpc-0ce917278d770499f
         serviceAccount.create: false
         serviceAccount.name: aws-load-balancer-controller
+        fullnameOverride: aws-load-balancer-controller
 
   syncPolicy:
     automated:
